@@ -1,0 +1,44 @@
+//
+//  ZkPCH.pch
+//  ZkXmppDemo
+//
+//  Created by 赵凯 on 2016/11/8.
+//  Copyright © 2016年 赵凯. All rights reserved.
+//
+
+#ifndef ZkPCH_pch
+#define ZkPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "XMPPFramework.h"
+#import "ZkXmppManager.h"
+#import "LCProgressHUD.h"
+#import "UIColor+ZkColor.h"
+
+//参数配置
+#define KX_HOST @"192.168.1.116"
+#define KX_PORT 5222
+#define KDOMAIN   @"strong"
+#define KRESOURCE @"ios"
+
+
+#define KSWIDTH [UIScreen mainScreen].bounds.size.width
+#define KSHEIGHT [UIScreen mainScreen].bounds.size.height
+#define KNAVH 64
+#define KHEADWIDTH 130
+#define KEDGEONE 10
+#define KEDGETOW 20
+#define KFONT 18
+#define KNAVCOLOR [UIColor colorWithRed:59.0/255 green:187.0/255 blue:240.0/255 alpha:1]
+
+//通知事件
+#define KLOGINSUCCESS      @"logInSuccess"
+#define KREGISTERSUCCESS   @"registerSuccess"
+#define KRECEIVEMESSAGE    @"receiveMessage"
+
+
+
+#endif /* ZkPCH_pch */
